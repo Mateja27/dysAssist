@@ -1,0 +1,172 @@
+<resources>
+
+    <!-- Main activity strings -->
+    <string name="app_name">Dys Assist</string>
+    <string name="main_dyslexia">Disleksija</string>
+    <string name="main_dyslexia_desc">Učenje riječi pomoću kartica</string>
+    <string name="main_dysgraphia">Disgrafija</string>
+    <string name="main_dysgraphia_desc">Vježba rukopisa</string>
+    <string name="main_dyscalculia">Diskalkulija</string>
+    <string name="main_dyscalculia_desc">Matematički kviz</string>
+    <string name="main_adhd">ADHD</string>
+    <string name="main_adhd_desc">Lista obaveza i Pomodoro odbrojavanje</string>
+
+    <!-- Button strings-->
+    <string name="button_begin">Započni</string>
+    <string name="button_log_out">Odjavi se</string>
+    <string name="button_show">Prikaži</string>
+    <string name="button_back">Nazad</string>
+    <string name="button_next">Dalje</string>
+    <string name="button_home_page">Početni zaslon</string>
+    <string name="button_play_again">Igraj ponovo</string>
+    <string name="button_practice_again">Vježbaj ponovo</string>
+    <string name="button_submit">Potvrdi</string>
+    <string name="button_choose_letter">Odaberi slovo</string>
+    <string name="button_choose_word">Odaberi riječi</string>
+    <string name="button_choose_again">Biraj ponovo</string>
+    <string name="button_delete">Obriši</string>
+    <string name="button_delete_all">Obriši sve</string>
+    <string name="button_add">Dodaj</string>
+    <string name="button_sign_in">Prijavi se</string>
+    <string name="button_sign_up">Registriraj se</string>
+
+    <string name="text_congrats">Čestitamo!</string>
+
+    <!-- Dyslexia activity strings -->
+    <string name="dyslexia_title">Započnite\u00A0  učenje\u00A0  riječi\u00A0  pomoću\u00A0  kartica\u00A0  za\u00A0 učenje. </string>
+    <string name="dyslexia_subtitle">Ako\u00A0  znate\u00A0 pročitati\u00A0  riječ\u00A0  odaberite\u00A0  kvačicu, u\u00A0  suprotnom\u00A0  iks.</string>
+
+    <string name="dyslexia_choose_card_count">Odaberite\u00A0 željeni\u00A0 broj\u00A0 kartica:</string>
+    <string name="radio_button_ten">10</string>
+    <string name="radio_button_fifteen">15</string>
+    <string name="radio_button_twenty">20</string>
+
+    <!-- Flashcard activity strings -->
+    <string name="text_flashcard_front">ali</string>
+    <string name="text_flashcard_back">Htjeli smo ići u šetnju, ali je počela padati kiša.</string>
+    <string name="flashcard_back_cd">Slika koja opisuje sadržaj rečenice.</string>
+    <string name="flashcard_back_right_cd">Gumb koji treba stisnuti ako je značenje riječi poznato.</string>
+    <string name="flashcard_back_wrong_cd">Gumb koji treba stisnuti ako je značenje riječi nepoznato.</string>
+    <string name="flashcard_oduvijek_firstP">Oduvijek</string>
+    <string name="flashcard_oduvijek_secondP">sam želio živjeti u kući na plaži.</string>
+
+    <!-- Flashcard Result activity strings -->
+
+    <string name="text_flashcard_result_current_score">Postotak \u00A0točnih \u00A0rješenja:</string>
+    <string name="text_flashcard_result_best_score">Najbolji \u00A0postotak:</string>
+    <string name="text_flashcard_result_current_score_sample">25%</string>
+    <string name="text_flashcard_result_best_score_sample">70%</string>
+
+
+    <!-- Dyscalculia activity strings -->
+    <string name="text_dyscalculia_welcome">Dobrodošli\u00A0 u\u00A0 matematički\u00A0 kviz!</string>
+    <string name="text_dyscalculia_desc_first">Odaberite\u00A0 željeni\u00A0 broj\u00A0 pitanja:</string>
+    <string name="text_dyscalculia_desc_second">Odgovorite\u00A0 na\u00A0 pitanja\u00A0 s\u00A0 matematičkim\u00A0 operacijama\u00A0 zbrajanja,\u00A0 oduzimanja\u00A0 i\u00A0 množenja.</string>
+
+    <!-- Quiz Questions activity strings -->
+    <string name="text_quiz_question_question_sample">3 x 4 = ?</string>
+    <string name="text_quiz_question_operator_sample">+</string>
+    <string name="text_quiz_question_answer_first_sample">12</string>
+    <string name="text_quiz_question_answer_second_sample">15</string>
+    <string name="text_quiz_question_answer_third_sample">16</string>
+
+
+
+    <!-- Quiz Result activity strings -->
+    <string name="text_quiz_result_current_score">Rezultat\u00A0  kviza:</string>
+    <string name="text_quiz_result_current_score_sample">2/10</string>
+    <string name="text_quiz_result_best_score">Najbolji\u00A0 rezultat:</string>
+    <string name="text_quiz_result_best_score_sample">7/10</string>
+    <string name="quiz_result_cd">Ilustracija trofeja kao simbola uspjeha.</string>
+
+    <!-- Dysgraphia activity strings -->
+
+    <string name="text_dysgraphia_title">Dobrodošli\u00A0 u\u00A0 aktivnost\u00A0 vježbanja\u00A0 rukopisa!</string>
+    <string name="text_dysgraphia_title_desc">Cilj\u00A0 ove\u00A0 aktivnosti\u00A0 je\u00A0 što\u00A0 vjernije\u00A0 reproducirati\u00A0 odabrane\u00A0 riječi\u00A0 ili\u00A0 slova.</string>
+
+
+    <!-- Letter activity strings -->
+    <string name="chooseLetterWelcome">Klikom\u00A0 odaberi\u00A0 slovo\u00A0 za\u00A0 vježbu\u00A0 rukopisa:</string>
+    <string name="text_letter_Aa">A a</string>
+    <string name="text_letter_Bb">B b</string>
+    <string name="text_letter_Cc">C c</string>
+    <string name="text_letter_CCcc">Č č</string>
+    <string name="text_letter_CCCccc">Ć ć</string>
+    <string name="text_letter_Dd">D d</string>
+    <string name="text_letter_DDdd">Dž dž</string>
+    <string name="text_letter_DDDddd">Đ đ</string>
+    <string name="text_letter_Ee">E e</string>
+    <string name="text_letter_Ff">F f</string>
+    <string name="text_letter_Gg">G g</string>
+    <string name="text_letter_Hh">H h</string>
+    <string name="text_letter_Ii">I i</string>
+    <string name="text_letter_Jj">J j</string>
+    <string name="text_letter_Kk">K k</string>
+    <string name="text_letter_Ll">L l</string>
+    <string name="text_letter_Ljlj">Lj lj</string>
+    <string name="text_letter_Mm">M m</string>
+    <string name="text_letter_Nn">N n</string>
+    <string name="text_letter_Njnj">Nj nj</string>
+    <string name="text_letter_Oo">O o</string>
+    <string name="text_letter_Pp">P p</string>
+    <string name="text_letter_Rr">R r</string>
+    <string name="text_letter_Ss">S s</string>
+    <string name="text_letter_SSss">Š š</string>
+    <string name="text_letter_Tt">T t</string>
+    <string name="text_letter_Uu">U u</string>
+    <string name="text_letter_Vv">V v</string>
+    <string name="text_letter_Zz">Z z</string>
+    <string name="text_letter_ZZzz">Ž ž</string>
+
+
+    <!-- Word activity strings -->
+    <string name="text_word_title">Klikom\u00A0 odaberi\u00A0 riječi\u00A0 za\u00A0 vježbu\u00A0 rukopisa:</string>
+    <string name="text_word_kao">kao</string>
+    <string name="text_word_ja">ja</string>
+    <string name="text_word_njegov">njegov</string>
+    <string name="text_word_da">da</string>
+    <string name="text_word_on">on</string>
+    <string name="text_word_bio">bio</string>
+    <string name="text_word_za">za</string>
+    <string name="text_word_na">na</string>
+    <string name="text_word_su">su</string>
+    <string name="text_word_sa">sa</string>
+    <string name="text_word_oni">oni</string>
+    <string name="text_word_biti">biti</string>
+    <string name="text_word_jedan">jedan</string>
+    <string name="text_word_ovo">ovo</string>
+    <string name="text_word_iz">iz</string>
+    <string name="text_word_sto">što</string>
+    <string name="text_word_kako">kako</string>
+    <string name="text_word_prema">prema</string>
+    <string name="text_word_vise">više</string>
+    <string name="text_word_bez">bez</string>
+    <string name="text_word_onda">onda</string>
+    <string name="text_word_opet">opet</string>
+    <string name="text_word_ovdje">ovdje</string>
+    <string name="text_word_zasto">zašto</string>
+
+
+    <!-- Adhd activity strings -->
+    <string name="text_adhd_timer_sample">25:00</string>
+
+    <!-- Adhd recycler strings -->
+    <string name="text_adhd_recycler_task_sample">Zadaća iz engleskog</string>
+
+    <!-- Adhd pop up strings -->
+    <string name="text_adhd_pop_up">Unesi obavezu...</string>
+
+
+    <!-- Sign in activity strings -->
+    <string name="text_sign_in_not_registered">Nemate\u00A0 korisnički\u00A0 račun?\u00A0 Kliknite\u00A0 za\u00A0 izradu.</string>
+    <string name="edit_sign_in_email">E-mail adresa...</string>
+    <string name="edit_sign_in_password">Zaporka...</string>
+    <string name="hide_password_cd">Otkrij ili sakrij zaporku.</string>
+
+    <!-- Sign up activity strings -->
+    <string name="edit_sign_up_email">Nova e-mail adresa...</string>
+    <string name="edit_sign_up_password">Nova zaporka...</string>
+    <string name="edit_sign_up_confirm_password">Potvrdite zaporku...</string>
+    <string name="edit_sign_up_already_registered">Već\u00A0 ste\u00A0 registrirani?\u00A0 Kliknite\u00A0 za\u00A0 prijavu.</string>
+
+</resources>
