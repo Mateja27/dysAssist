@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_main_dyslexia"
+        android:layout_width="155dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/main_activity_bg_border_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_main_dyslexia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="39dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.2"
+            android:text="@string/main_dyslexia"
+            android:textColor="@color/darkGrey"
+            android:textSize="20sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_main_dyslexia_desc"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:letterSpacing="0.2"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/main_dyslexia_desc"
+            android:textColor="@color/darkGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_main_dyslexia" />
+
+        <Button
+            android:id="@+id/button_main_dyslexia_begin"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/btnColor"
+            android:letterSpacing="0.2"
+            android:text="@string/button_begin"
+            android:textColor="@color/darkGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_main_adhd"
+        android:layout_width="155dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/main_activity_bg_border_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_main_dysgraphia"
+        app:layout_constraintVertical_bias="0.487">
+
+        <TextView
+            android:id="@+id/text_main_adhd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="37dp"
+            android:letterSpacing="0.2"
+            android:text="@string/main_adhd"
+            android:textColor="@color/darkGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_main_adhd_desc"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            android:letterSpacing="0.2"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/main_adhd_desc"
+            android:textColor="@color/darkGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_main_adhd" />
+
+        <Button
+            android:id="@+id/button_main_adhd_begin"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/btnColor"
+            android:letterSpacing="0.2"
+            android:text="@string/button_begin"
+            android:textColor="@color/darkGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_main_dyscalculia"
+        android:layout_width="155dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/main_activity_bg_border_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_main_dyslexia"
+        app:layout_constraintVertical_bias="0.487">
+
+        <TextView
+            android:id="@+id/text_main_dyscalculia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="1dp"
+            android:letterSpacing="0.2"
+            android:text="@string/main_dyscalculia"
+            android:textColor="@color/darkGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_main_dyscalculia_desc"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="5dp"
+            android:letterSpacing="0.2"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/main_dyscalculia_desc"
+            android:textColor="@color/darkGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_main_dyscalculia" />
+
+        <Button
+            android:id="@+id/button_main_dyscalculia_begin"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/btnColor"
+            android:letterSpacing="0.2"
+            android:text="@string/button_begin"
+            android:textColor="@color/darkGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_main_dysgraphia"
+        android:layout_width="155dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/main_activity_bg_border_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_main_dysgraphia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="28dp"
+            android:letterSpacing="0.2"
+            android:text="@string/main_dysgraphia"
+            android:textColor="@color/darkGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_main_dysgraphia_desc"
+            android:layout_width="111dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="13dp"
+            android:letterSpacing="0.2"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/main_dysgraphia_desc"
+            android:textColor="@color/darkGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_main_dysgraphia" />
+
+        <Button
+            android:id="@+id/button_main_dysgraphia_begin"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/btnColor"
+            android:letterSpacing="0.2"
+            android:text="@string/button_begin"
+            android:textColor="@color/darkGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.2"
+        android:text="@string/button_log_out"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_main_adhd"
+        app:layout_constraintVertical_bias="0.41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

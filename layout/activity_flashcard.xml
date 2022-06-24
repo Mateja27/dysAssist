@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_flashcard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Dyslexia.FlashcardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_flashcard_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor">
+
+
+        <TextView
+            android:id="@+id/text_flashcard_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="154dp"
+            android:letterSpacing="0.2"
+            android:text="@string/text_flashcard_front"
+            android:textColor="@color/darkGrey"
+            android:textSize="65sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/button_flashcard_front"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="135dp"
+            android:backgroundTint="@color/btnColor"
+            android:text="@string/button_show"
+            android:textColor="@color/darkGrey"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_flashcard_front" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_flashcard_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/greenColor"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/image_button_flashcard_sound"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            app:srcCompat="@drawable/flashcard_volume_icon" />
+
+        <ImageView
+            android:id="@+id/image_flashcard_back"
+            android:layout_width="340dp"
+            android:layout_height="330dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/flashcard_back_cd"
+            app:srcCompat="@drawable/dyslexia_flashcard_image_rain" />
+
+        <TextView
+            android:id="@+id/text_flashcard_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:letterSpacing="0.2"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/text_flashcard_back"
+            android:textAlignment="viewStart"
+            android:textColor="@color/darkGrey"
+            android:textSize="28sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_flashcard_checker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/button_flashcard_check_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/flashcard_back_right_cd"
+                android:layout_marginStart="105dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/bgColor"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/dyslexia_flashcard_check"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/button_flashcard_check_wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/flashcard_back_wrong_cd"
+                android:layout_marginEnd="92dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/bgColor"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/dyslexia_flashcard_cancel"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

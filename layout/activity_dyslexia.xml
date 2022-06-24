@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_dyslexia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Dyslexia.DyslexiaActivity">
+
+    <TextView
+        android:id="@+id/text_dyslexia"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/greenColor"
+        android:letterSpacing="0.20"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/dyslexia_title"
+        android:textColor="@color/darkGrey"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_dylexia_subtitle"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/greenColor"
+        android:letterSpacing="0.20"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/dyslexia_subtitle"
+        android:textColor="@color/darkGrey"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dyslexia" />
+
+    <TextView
+        android:id="@+id/text_dyslexia_card_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:letterSpacing="0.2"
+        android:text="@string/dyslexia_choose_card_count"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dylexia_subtitle" />
+
+    <Button
+        android:id="@+id/button_dyslexia_begin"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="116dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.20"
+        android:text="@string/button_begin"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_dyslexia" />
+
+    <Button
+        android:id="@+id/button_dyslexia_back"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="130dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.20"
+        android:text="@string/button_back"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_dyslexia_begin" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_dyslexia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="13dp"
+        android:checkedButton="@id/radio_button_cards_ten"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dyslexia_card_count">
+
+        <RadioButton
+            android:id="@+id/radio_button_cards_ten"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.20"
+            android:text="@string/radio_button_ten"
+            android:textColor="@color/rbColor"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radio_button_cards_fifteen"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.20"
+            android:text="@string/radio_button_fifteen"
+            android:textColor="@color/rbColor"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radio_button_cards_twenty"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.20"
+            android:text="@string/radio_button_twenty"
+            android:textColor="@color/rbColor"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

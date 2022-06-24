@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_quiz_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Dyscalculia.QuizResultActivity">
+
+    <TextView
+        android:id="@+id/congratsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="110dp"
+        android:background="@color/blueColor"
+        android:letterSpacing="0.2"
+        android:text="@string/text_congrats"
+        android:textColor="@color/darkGrey"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_quiz_result"
+        android:layout_width="134dp"
+        android:layout_height="152dp"
+        android:contentDescription="@string/quiz_result_cd"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="127dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congratsTV"
+        app:srcCompat="@drawable/dyscalculia_result_trophy"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_quiz_result_current_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="91dp"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_result_current_score"
+        android:textColor="@color/darkGrey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_quiz_result" />
+
+    <TextView
+        android:id="@+id/text_quiz_result_current_score_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="150dp"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_result_current_score_sample"
+        android:textColor="@color/darkGrey"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_result_current_score" />
+
+    <TextView
+        android:id="@+id/text_quiz_result_best_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="90dp"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_result_best_score"
+        android:textColor="@color/darkGrey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_result_current_score_sample" />
+
+    <TextView
+        android:id="@+id/text_quiz_result_best_score_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_result_best_score_sample"
+        android:textColor="@color/darkGrey"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_result_best_score" />
+
+    <Button
+        android:id="@+id/button_quiz_result_play_again"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="117dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.2"
+        android:text="@string/button_play_again"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_result_best_score_sample" />
+
+    <Button
+        android:id="@+id/button_quiz_result_home_page"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.2"
+        android:text="@string/button_home_page"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_quiz_result_play_again" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

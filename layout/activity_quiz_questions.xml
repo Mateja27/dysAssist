@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_quiz_questions"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Dyscalculia.QuizQuestionsActivity">
+
+    <TextView
+        android:id="@+id/text_quiz_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="121dp"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_question_question_sample"
+        android:textColor="@color/darkGrey"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_quiz_question_submit"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/white"
+        android:letterSpacing="0.2"
+        android:text="@string/button_submit"
+        android:textColor="@color/darkGrey"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_question_answer_third" />
+
+    <TextView
+        android:id="@+id/text_quiz_question_answer_first"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="65dp"
+        android:background="@drawable/dyscalculia_border_option_default"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_question_answer_first_sample"
+        android:textAlignment="center"
+        android:textColor="@color/darkGrey"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_question" />
+
+    <TextView
+        android:id="@+id/text_quiz_question_answer_second"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="65dp"
+        android:background="@drawable/dyscalculia_border_option_default"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_question_answer_second_sample"
+        android:textAlignment="center"
+        android:textColor="@color/darkGrey"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_question_answer_first" />
+
+    <TextView
+        android:id="@+id/text_quiz_question_answer_third"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/dyscalculia_border_option_default"
+        android:letterSpacing="0.2"
+        android:text="@string/text_quiz_question_answer_third_sample"
+        android:textAlignment="center"
+        android:textColor="@color/darkGrey"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz_question_answer_second" />
+
+    <LinearLayout
+        android:id="@+id/linear_quiz_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progress_quiz_question"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="10"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:progressTint="@color/darkGrey" />
+
+        <TextView
+            android:id="@+id/text_quiz_question_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="0/10"
+            android:textColor="@color/darkGrey"
+            android:textColorHint="#7A8089"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_quiz_question_apples"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_quiz_question">
+
+        <ImageView
+            android:id="@+id/image_quiz_question_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/dyscalculia_apple_one" />
+
+        <TextView
+            android:id="@+id/text_quiz_question_oprator"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/text_quiz_question_operator_sample"
+            android:textAlignment="center"
+            android:textColor="@color/darkGrey"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/image_quiz_question_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dyscalculia_apple_six" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

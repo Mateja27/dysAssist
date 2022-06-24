@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_flashcard_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Dyslexia.FlashCardResultActivity">
+
+    <TextView
+        android:id="@+id/text_flashcard_result_congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="130dp"
+        android:background="@color/greenColor"
+        android:letterSpacing="0.20"
+        android:text="@string/text_congrats"
+        android:textColor="@color/darkGrey"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_flashcard_result_current_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/greenColor"
+        android:letterSpacing="0.2"
+        android:text="@string/text_flashcard_result_current_score"
+        android:textColor="@color/darkGrey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_flashcard_result_congrats" />
+
+    <TextView
+        android:id="@+id/text_flashcard_result_score_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="100dp"
+        android:letterSpacing="0.2"
+        android:text="@string/text_flashcard_result_current_score_sample"
+        android:textColor="@color/darkGrey"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_flashcard_result_current_score" />
+
+    <TextView
+        android:id="@+id/text_flashcard_result_best_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:background="@color/greenColor"
+        android:letterSpacing="0.2"
+        android:text="@string/text_flashcard_result_best_score"
+        android:textColor="@color/darkGrey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_flashcard_result_score_percent" />
+
+    <TextView
+        android:id="@+id/text_flashcard_result_best_score_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="122dp"
+        android:letterSpacing="0.2"
+        android:text="@string/text_flashcard_result_best_score_sample"
+        android:textColor="@color/darkGrey"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_flashcard_result_best_score" />
+
+    <Button
+        android:id="@+id/button_flashcard_result_back"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="85dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.2"
+        android:text="@string/button_practice_again"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_flashcard_result_best_score_percent" />
+
+    <Button
+        android:id="@+id/button_flashcard_result_home_page"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="65dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.2"
+        android:text="@string/button_home_page"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_flashcard_result_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

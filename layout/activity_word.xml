@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_word"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Dysgraphia.WordActivity">
+
+    <TextView
+        android:id="@+id/text_word_title"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
+        android:letterSpacing="0.2"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/text_word_title"
+        android:textColor="@color/darkGrey"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_letter_displayed"
+        android:layout_width="347dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/blueColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_word_title">
+
+        <TextView
+            android:id="@+id/text_word_kao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_kao"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_word_ja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_ja"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_kao"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_word_njegov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_njegov"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_ja"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_word_da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_da"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_word_njegov"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_word_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_on"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_kao" />
+
+        <TextView
+            android:id="@+id/text_word_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_bio"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_on"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_ja" />
+
+        <TextView
+            android:id="@+id/text_word_za"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_za"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_su" />
+
+        <TextView
+            android:id="@+id/text_word_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_na"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_prema"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_da" />
+
+        <TextView
+            android:id="@+id/text_word_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_su"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_on" />
+
+        <TextView
+            android:id="@+id/text_word_oni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_oni"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_za" />
+
+        <TextView
+            android:id="@+id/text_word_jedan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_jedan"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_ovdje"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_vise" />
+
+        <TextView
+            android:id="@+id/text_word_sto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_sto"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_jedan"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_sa" />
+
+        <TextView
+            android:id="@+id/text_word_kako"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_kako"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_onda"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_jedan" />
+
+        <TextView
+            android:id="@+id/text_word_prema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_prema"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_bio"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_njegov" />
+
+        <TextView
+            android:id="@+id/text_word_vise"
+            android:layout_width="63dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_vise"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_biti"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_prema" />
+
+        <TextView
+            android:id="@+id/text_word_bez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_bez"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_kako"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_sto" />
+
+        <TextView
+            android:id="@+id/text_word_biti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_biti"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_su"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_bio" />
+
+        <TextView
+            android:id="@+id/text_word_onda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_onda"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_oni"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_ovdje" />
+
+        <TextView
+            android:id="@+id/text_word_opet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_opet"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_iz"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_onda" />
+
+        <TextView
+            android:id="@+id/text_word_zasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_zasto"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_opet"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_kako" />
+
+        <TextView
+            android:id="@+id/text_word_ovdje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_ovdje"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_za"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_biti" />
+
+        <TextView
+            android:id="@+id/text_word_iz"
+            android:layout_width="39dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_iz"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_oni" />
+
+        <TextView
+            android:id="@+id/text_word_ovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_ovo"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_zasto"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_bez" />
+
+        <TextView
+            android:id="@+id/text_word_sa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.15"
+            android:text="@string/text_word_sa"
+            android:textColor="@color/darkGrey"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/text_word_vise"
+            app:layout_constraintTop_toBottomOf="@+id/text_word_na" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_word_back"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="139dp"
+        android:backgroundTint="@color/btnColor"
+        android:letterSpacing="0.2"
+        android:padding="10dp"
+        android:text="@string/button_back"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_letter_displayed" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
